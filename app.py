@@ -18,6 +18,19 @@ st.set_page_config(
 
 st.logo("logo.jpg")
 
+st.markdown("""
+    <style>
+    [data-testid="stLogo"] {
+        height: 150px !important;
+        width: auto !important;
+    }
+    [data-testid="stLogo"] img {
+        height: 150px !important;
+        width: auto !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Custom CSS - Green and Blue Medical Theme
 st.markdown("""
     <style>
@@ -469,3 +482,4 @@ elif page == "System Details":
         st.markdown("---")
         st.markdown("**Intended Use**")
         st.info("This system is designed for screening purposes only and should be used as part of a comprehensive diabetes management program.")
+
