@@ -12,6 +12,7 @@ from tensorflow import keras
 st.set_page_config(
     page_title="RetinaScan Pro - Diabetic Retinopathy Detection",
     page_icon="👁️",
+    st.logo("logo.jpg")
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -447,4 +448,5 @@ elif page == "System Details":
         
         st.markdown("---")
         st.markdown("**Intended Use**")
+
         st.info("This system is designed for screening purposes only and should be used as part of a comprehensive diabetes management program.")
