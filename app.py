@@ -39,6 +39,14 @@ st.markdown("""
         border-left: 4px solid #00A859;
         padding-left: 1rem;
     }
+    .stApp {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), 
+                      url('testing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
     .medical-card {
         background: linear-gradient(135deg, #f8fdff 0%, #f0f9f4 100%);
         padding: 1.5rem;
@@ -449,5 +457,6 @@ elif page == "System Details":
         st.markdown("**Intended Use**")
 
         st.info("This system is designed for screening purposes only and should be used as part of a comprehensive diabetes management program.")
+
 
 
